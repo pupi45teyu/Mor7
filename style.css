@@ -55,12 +55,12 @@ button:hover {
     height: 100px;
     background-color: red;
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
-    animation: latir 0.5s infinite alternate;
+    animation: latir 1s infinite alternate;
     opacity: 1;
-    transition: opacity 1s ease-out;
+    transition: opacity 2s ease-out;
 }
 
 .corazon::before, .corazon::after {
