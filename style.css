@@ -58,9 +58,9 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
-    animation: latir 1s infinite alternate;
+    animation: latir 0.5s infinite alternate;
     opacity: 1;
-    transition: opacity 2s ease-out;
+    transition: opacity 1s ease-out;
 }
 
 .corazon::before, .corazon::after {
