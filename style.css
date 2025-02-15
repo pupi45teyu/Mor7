@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 26px;
+    color: white;
+}
+
+.mensaje {
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+button {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff1e3c;
+}
+
+.sorpresa {
+    display: none;
+    margin-top: 20px;
+}
+
+.corazon {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    animation: latir 1s infinite alternate;
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+
+.corazon::before, .corazon::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.corazon::before {
+    top: -50px;
+    left: 0;
+}
+
+.corazon::after {
+    left: 50px;
+    top: 0;
+}
+
+@keyframes latir {
+    from { transform: translate(-50%, -50%) scale(1) rotate(-45deg); }
+    to { transform: translate(-50%, -50%) scale(1.1) rotate(-45deg); }
+}
